@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '6571048292594f91ab0290e1cf58114d')">Chosen features</button>
+            <button class="tablinks" onclick="showChart(event, '46ea4677d710470eac2da7c63348c11c')">Attacking</button>
+            <button class="tablinks" onclick="showChart(event, 'ce684305839d4e8a9f9682d03fd24af2')">Skill</button>
+            <button class="tablinks" onclick="showChart(event, '692c4960c8f443238315b1d045528e09')">Movement</button>
+            <button class="tablinks" onclick="showChart(event, '75d2dae92ad94dcb8e7888d016701d9d')">Power</button>
+            <button class="tablinks" onclick="showChart(event, '6dbda6b3d0464d03bb12ea79031f786f')">Mentality</button>
+            <button class="tablinks" onclick="showChart(event, 'e4851314577448328203f96361ed3d17')">Defending</button>
+            <button class="tablinks" onclick="showChart(event, '37088b886b9f4d70b7b09df55fb0d108')">Goalkeeping</button>
+    </div>
+
+    <div class="box">
+                <div id="6571048292594f91ab0290e1cf58114d" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_6571048292594f91ab0290e1cf58114d = echarts.init(
+            document.getElementById('6571048292594f91ab0290e1cf58114d'), 'vintage', {renderer: 'canvas'});
+        var option_6571048292594f91ab0290e1cf58114d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    93.0,
+                    70.0,
+                    96.0,
+                    75.0,
+                    94.0,
+                    69.0,
+                    85.0,
+                    80.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    79.0,
+                    73.0,
+                    92.0,
+                    70.0,
+                    79.0,
+                    76.0,
+                    78.0,
+                    96.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    81.0,
+                    90.0,
+                    88.0,
+                    84.0,
+                    93.0,
+                    78.0,
+                    84.0,
+                    91.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Curve",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Heading Accuracy",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Dribbling",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Penalties",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Long Shots",
+                "max": 100,
+                "color": "#5E2612"
+            },
+            {
+                "name": "Strength",
+                "max": 100,
+                "color": "#DA70D6"
+            },
+            {
+                "name": "Crossing",
+                "max": 100,
+                "color": "#0B1746"
+            },
+            {
+                "name": "Sprint Speed",
+                "max": 100,
+                "color": "black"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_6571048292594f91ab0290e1cf58114d.setOption(option_6571048292594f91ab0290e1cf58114d);
+    </script>
+                <div id="46ea4677d710470eac2da7c63348c11c" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_46ea4677d710470eac2da7c63348c11c = echarts.init(
+            document.getElementById('46ea4677d710470eac2da7c63348c11c'), 'vintage', {renderer: 'canvas'});
+        var option_46ea4677d710470eac2da7c63348c11c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    85.0,
+                    95.0,
+                    70.0,
+                    91.0,
+                    88.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    78.0,
+                    91.0,
+                    73.0,
+                    83.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    84.0,
+                    95.0,
+                    90.0,
+                    82.0,
+                    86.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Crossing",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Finishing",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Heading Accuracy",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Short Passing",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Volleys",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_46ea4677d710470eac2da7c63348c11c.setOption(option_46ea4677d710470eac2da7c63348c11c);
+    </script>
+                <div id="ce684305839d4e8a9f9682d03fd24af2" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_ce684305839d4e8a9f9682d03fd24af2 = echarts.init(
+            document.getElementById('ce684305839d4e8a9f9682d03fd24af2'), 'vintage', {renderer: 'canvas'});
+        var option_ce684305839d4e8a9f9682d03fd24af2 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    96.0,
+                    93.0,
+                    94.0,
+                    91.0,
+                    96.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    92.0,
+                    79.0,
+                    63.0,
+                    70.0,
+                    90.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    88.0,
+                    81.0,
+                    76.0,
+                    77.0,
+                    92.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Dribbling",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Curve",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "FK Accuracy",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Long Passing",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Ball Control",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_ce684305839d4e8a9f9682d03fd24af2.setOption(option_ce684305839d4e8a9f9682d03fd24af2);
+    </script>
+                <div id="692c4960c8f443238315b1d045528e09" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_692c4960c8f443238315b1d045528e09 = echarts.init(
+            document.getElementById('692c4960c8f443238315b1d045528e09'), 'vintage', {renderer: 'canvas'});
+        var option_692c4960c8f443238315b1d045528e09 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    91.0,
+                    80.0,
+                    91.0,
+                    94.0,
+                    95.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    96.0,
+                    96.0,
+                    92.0,
+                    92.0,
+                    82.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    87.0,
+                    91.0,
+                    87.0,
+                    95.0,
+                    71.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Acceleration",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Sprint Speed",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Agility",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Reactions",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Balance",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_692c4960c8f443238315b1d045528e09.setOption(option_692c4960c8f443238315b1d045528e09);
+    </script>
+                <div id="75d2dae92ad94dcb8e7888d016701d9d" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_75d2dae92ad94dcb8e7888d016701d9d = echarts.init(
+            document.getElementById('75d2dae92ad94dcb8e7888d016701d9d'), 'vintage', {renderer: 'canvas'});
+        var option_75d2dae92ad94dcb8e7888d016701d9d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    86.0,
+                    68.0,
+                    72.0,
+                    69.0,
+                    94.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    86.0,
+                    77.0,
+                    86.0,
+                    76.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    94.0,
+                    95.0,
+                    84.0,
+                    78.0,
+                    93.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Shot Power",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Jumping",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Stamina",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Strength",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Long Shots",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_75d2dae92ad94dcb8e7888d016701d9d.setOption(option_75d2dae92ad94dcb8e7888d016701d9d);
+    </script>
+                <div id="6dbda6b3d0464d03bb12ea79031f786f" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_6dbda6b3d0464d03bb12ea79031f786f = echarts.init(
+            document.getElementById('6dbda6b3d0464d03bb12ea79031f786f'), 'vintage', {renderer: 'canvas'});
+        var option_6dbda6b3d0464d03bb12ea79031f786f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    44.0,
+                    40.0,
+                    93.0,
+                    95.0,
+                    75.0,
+                    96.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    62.0,
+                    38.0,
+                    91.0,
+                    80.0,
+                    70.0,
+                    84.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    63.0,
+                    29.0,
+                    95.0,
+                    82.0,
+                    84.0,
+                    95.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Aggression",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Interceptions",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Positioning",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Vision",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Penalties",
+                "max": 100,
+                "color": "#5E2612"
+            },
+            {
+                "name": "Composure",
+                "max": 100,
+                "color": "#DA70D6"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_6dbda6b3d0464d03bb12ea79031f786f.setOption(option_6dbda6b3d0464d03bb12ea79031f786f);
+    </script>
+                <div id="e4851314577448328203f96361ed3d17" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_e4851314577448328203f96361ed3d17 = echarts.init(
+            document.getElementById('e4851314577448328203f96361ed3d17'), 'vintage', {renderer: 'canvas'});
+        var option_e4851314577448328203f96361ed3d17 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    35.0,
+                    24.0,
+                    32.0,
+                    40.0,
+                    40.0,
+                    69.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    34.0,
+                    32.0,
+                    34.0,
+                    38.0,
+                    38.0,
+                    76.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    32.0,
+                    24.0,
+                    28.0,
+                    29.0,
+                    29.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Standing Tackle",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Sliding Tackle",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Defensive Awareness",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Interceptions",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Interceptions",
+                "max": 100,
+                "color": "#5E2612"
+            },
+            {
+                "name": "Strength",
+                "max": 100,
+                "color": "#DA70D6"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_e4851314577448328203f96361ed3d17.setOption(option_e4851314577448328203f96361ed3d17);
+    </script>
+                <div id="37088b886b9f4d70b7b09df55fb0d108" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_37088b886b9f4d70b7b09df55fb0d108 = echarts.init(
+            document.getElementById('37088b886b9f4d70b7b09df55fb0d108'), 'vintage', {renderer: 'canvas'});
+        var option_37088b886b9f4d70b7b09df55fb0d108 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Lionel Messi",
+            "data": [
+                [
+                    6.0,
+                    11.0,
+                    15.0,
+                    14.0,
+                    8.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    13.0,
+                    5.0,
+                    7.0,
+                    11.0,
+                    6.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "C. Ronaldo dos Santos Aveiro",
+            "data": [
+                [
+                    7.0,
+                    11.0,
+                    15.0,
+                    14.0,
+                    11.0
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Lionel Messi",
+                "Kylian Mbapp\u00e9",
+                "C. Ronaldo dos Santos Aveiro"
+            ],
+            "selected": {
+                "Lionel Messi": true,
+                "Kylian Mbapp\u00e9": true,
+                "C. Ronaldo dos Santos Aveiro": true
+            },
+            "type": "scroll",
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "GK Diving",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "GK Handling",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "GK Kicking",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "GK Positioning",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "GK Reflexes",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_37088b886b9f4d70b7b09df55fb0d108.setOption(option_37088b886b9f4d70b7b09df55fb0d108);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

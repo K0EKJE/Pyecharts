@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '80162d630a3d4fca81d8c2c7e7c71587')">Front Court</button>
+            <button class="tablinks" onclick="showChart(event, '3523e39c38384f908f603cb61ba363bb')">Mid Court</button>
+            <button class="tablinks" onclick="showChart(event, '608a1fa5d8194735a17db915603772a7')">Back Court</button>
+            <button class="tablinks" onclick="showChart(event, '9cbdc1f3824e4ba8abadc1224f6c8fd1')">Goal Keeper</button>
+    </div>
+
+    <div class="box">
+                <div id="80162d630a3d4fca81d8c2c7e7c71587" class="chart-container" style="width:1000px; height:550px;"></div>
+    <script>
+        var chart_80162d630a3d4fca81d8c2c7e7c71587 = echarts.init(
+            document.getElementById('80162d630a3d4fca81d8c2c7e7c71587'), 'vintage', {renderer: 'canvas'});
+        var option_80162d630a3d4fca81d8c2c7e7c71587 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                532,
+                225,
+                218,
+                203,
+                201,
+                194,
+                152,
+                104,
+                85,
+                78
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "insideRight",
+                "margin": 8,
+                "formatter": "{c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "Number of Players",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 40,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "Country",
+            "show": true,
+            "scale": false,
+            "nameLocation": "start",
+            "nameGap": 15,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 2,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "black"
+                }
+            },
+            "axisLabel": {
+                "color": "#B22222",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 12
+            },
+            "inverse": true,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "United Kingdom",
+                "Brazil",
+                "Spain",
+                "Germany",
+                "France",
+                "Argentina",
+                "Italy",
+                "Netherlands",
+                "Portugal",
+                "Colombia"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "Top 10 Countries With Most: Front Court Players",
+            "left": "20%",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            }
+        }
+    ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#B0171F"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "13%",
+            "top": "20%",
+            "bottom": "15%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_80162d630a3d4fca81d8c2c7e7c71587.setOption(option_80162d630a3d4fca81d8c2c7e7c71587);
+    </script>
+                <div id="3523e39c38384f908f603cb61ba363bb" class="chart-container" style="width:1000px; height:550px;"></div>
+    <script>
+        var chart_3523e39c38384f908f603cb61ba363bb = echarts.init(
+            document.getElementById('3523e39c38384f908f603cb61ba363bb'), 'vintage', {renderer: 'canvas'});
+        var option_3523e39c38384f908f603cb61ba363bb = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                821,
+                381,
+                366,
+                310,
+                267,
+                261,
+                157,
+                128,
+                125,
+                117
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "insideRight",
+                "margin": 8,
+                "formatter": "{c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "Number of Players",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 40,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "Country",
+            "show": true,
+            "scale": false,
+            "nameLocation": "start",
+            "nameGap": 15,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 2,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "black"
+                }
+            },
+            "axisLabel": {
+                "color": "#B22222",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 12
+            },
+            "inverse": true,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "United Kingdom",
+                "Spain",
+                "Germany",
+                "France",
+                "Brazil",
+                "Argentina",
+                "Italy",
+                "Mexico",
+                "Netherlands",
+                "Japan"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "Top 10 Countries With Most: Mid Court Players",
+            "left": "20%",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            }
+        }
+    ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#B0171F"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "13%",
+            "top": "20%",
+            "bottom": "15%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_3523e39c38384f908f603cb61ba363bb.setOption(option_3523e39c38384f908f603cb61ba363bb);
+    </script>
+                <div id="608a1fa5d8194735a17db915603772a7" class="chart-container" style="width:1000px; height:550px;"></div>
+    <script>
+        var chart_608a1fa5d8194735a17db915603772a7 = echarts.init(
+            document.getElementById('608a1fa5d8194735a17db915603772a7'), 'vintage', {renderer: 'canvas'});
+        var option_608a1fa5d8194735a17db915603772a7 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                1122,
+                531,
+                485,
+                449,
+                377,
+                310,
+                225,
+                204,
+                156,
+                155
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "insideRight",
+                "margin": 8,
+                "formatter": "{c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "Number of Players",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 40,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "Country",
+            "show": true,
+            "scale": false,
+            "nameLocation": "start",
+            "nameGap": 15,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 2,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "black"
+                }
+            },
+            "axisLabel": {
+                "color": "#B22222",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 12
+            },
+            "inverse": true,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "United Kingdom",
+                "Germany",
+                "Spain",
+                "France",
+                "Brazil",
+                "Argentina",
+                "Italy",
+                "Netherlands",
+                "United States",
+                "Portugal"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "Top 10 Countries With Most: Back Court Players",
+            "left": "20%",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            }
+        }
+    ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#B0171F"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "13%",
+            "top": "20%",
+            "bottom": "15%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_608a1fa5d8194735a17db915603772a7.setOption(option_608a1fa5d8194735a17db915603772a7);
+    </script>
+                <div id="9cbdc1f3824e4ba8abadc1224f6c8fd1" class="chart-container" style="width:1000px; height:550px;"></div>
+    <script>
+        var chart_9cbdc1f3824e4ba8abadc1224f6c8fd1 = echarts.init(
+            document.getElementById('9cbdc1f3824e4ba8abadc1224f6c8fd1'), 'vintage', {renderer: 'canvas'});
+        var option_9cbdc1f3824e4ba8abadc1224f6c8fd1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                237,
+                144,
+                128,
+                92,
+                82,
+                75,
+                72,
+                64,
+                51,
+                43
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "insideRight",
+                "margin": 8,
+                "formatter": "{c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "Number of Players",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 40,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "Country",
+            "show": true,
+            "scale": false,
+            "nameLocation": "start",
+            "nameGap": 15,
+            "nameTextStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 14
+            },
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 2,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "black"
+                }
+            },
+            "axisLabel": {
+                "color": "#B22222",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 12
+            },
+            "inverse": true,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "United Kingdom",
+                "Germany",
+                "Spain",
+                "France",
+                "Italy",
+                "Argentina",
+                "Brazil",
+                "Netherlands",
+                "United States",
+                "Mexico"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "Top 10 Countries With Most: Goal Keepers",
+            "left": "20%",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            }
+        }
+    ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#B0171F"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "13%",
+            "top": "20%",
+            "bottom": "15%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_9cbdc1f3824e4ba8abadc1224f6c8fd1.setOption(option_9cbdc1f3824e4ba8abadc1224f6c8fd1);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

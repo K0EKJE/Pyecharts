@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+</head>
+<body>
+    <div id="13ad349861cf41efb09094407a73ee90" class="chart-container" style="width:1000px; height:600px;"></div>
+    <script>
+        var chart_13ad349861cf41efb09094407a73ee90 = echarts.init(
+            document.getElementById('13ad349861cf41efb09094407a73ee90'), 'vintage', {renderer: 'canvas'});
+        var option_13ad349861cf41efb09094407a73ee90 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Back Court",
+                    "value": 7341
+                },
+                {
+                    "name": "Mid Court",
+                    "value": 5501
+                },
+                {
+                    "name": "Front Court",
+                    "value": 3915
+                },
+                {
+                    "name": "Goal Keeper",
+                    "value": 1759
+                }
+            ],
+            "radius": [
+                "30%",
+                "70%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 15,
+                "fontFamily": "Arial",
+                "formatter": "{b}: {d}% ({c})"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Back Court",
+                "Mid Court",
+                "Front Court",
+                "Goal Keeper"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "5%",
+            "top": "60%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": [
+                    "#6A5ACD",
+                    "#A066D3",
+                    "#33A1C9",
+                    "#808A87"
+                ]
+            },
+            "icon": "pin"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "color": [
+        "#C2518B",
+        "#5E4DDA",
+        "#F47DBA",
+        "#946EC2"
+    ],
+    "title": [
+        {
+            "text": "Proportion of Players",
+            "subtext": "By each position",
+            "left": "2%",
+            "top": "2%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ]
+};
+        chart_13ad349861cf41efb09094407a73ee90.setOption(option_13ad349861cf41efb09094407a73ee90);
+    </script>
+</body>
+</html>

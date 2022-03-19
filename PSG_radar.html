@@ -1,0 +1,6531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'a7f53c10c8024d238fb80578dac85161')">Attacking</button>
+            <button class="tablinks" onclick="showChart(event, '510fcaa9719642088598e36f7c9662f1')">Skill</button>
+            <button class="tablinks" onclick="showChart(event, 'c2a1445dd49141a2bdeed8bf9684011c')">Movement</button>
+            <button class="tablinks" onclick="showChart(event, 'a6913dbf50ac43e2a9a0982eda1a0efe')">Power</button>
+            <button class="tablinks" onclick="showChart(event, 'f575a4bf0c1a4beaa1bdc3c4f5e9ba87')">Mentality</button>
+            <button class="tablinks" onclick="showChart(event, 'eb8225c880c74ddc9e0e05b0f383f54c')">Defending</button>
+            <button class="tablinks" onclick="showChart(event, '1dc98a19ebce4758a35afb9644a8bd63')">Goalkeeping</button>
+    </div>
+
+    <div class="box">
+                <div id="a7f53c10c8024d238fb80578dac85161" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_a7f53c10c8024d238fb80578dac85161 = echarts.init(
+            document.getElementById('a7f53c10c8024d238fb80578dac85161'), 'vintage', {renderer: 'canvas'});
+        var option_a7f53c10c8024d238fb80578dac85161 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    68.0,
+                    87.0,
+                    89.0,
+                    75.0,
+                    88.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    78.0,
+                    91.0,
+                    73.0,
+                    83.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    85.0,
+                    87.0,
+                    62.0,
+                    87.0,
+                    87.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    62.0,
+                    31.0,
+                    78.0,
+                    79.0,
+                    33.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    68.0,
+                    33.0,
+                    84.0,
+                    82.0,
+                    31.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    79.0,
+                    74.0,
+                    64.0,
+                    81.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    76.0,
+                    70.0,
+                    72.0,
+                    76.0,
+                    87.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    85.0,
+                    65.0,
+                    57.0,
+                    82.0,
+                    61.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    75.0,
+                    60.0,
+                    55.0,
+                    90.0,
+                    64.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    88.0,
+                    79.0,
+                    51.0,
+                    83.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    47.0,
+                    90.0,
+                    88.0,
+                    76.0,
+                    85.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    60.0,
+                    53.0,
+                    69.0,
+                    81.0,
+                    32.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    83.0,
+                    77.0,
+                    61.0,
+                    83.0,
+                    64.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    11.0,
+                    15.0,
+                    11.0,
+                    30.0,
+                    11.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    85.0,
+                    61.0,
+                    71.0,
+                    83.0,
+                    68.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    66.0,
+                    53.0,
+                    77.0,
+                    82.0,
+                    76.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    72.0,
+                    93.0,
+                    88.0,
+                    79.0,
+                    null
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Crossing",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Finishing",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Heading Accuracy",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Short Passing",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Volleys",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_a7f53c10c8024d238fb80578dac85161.setOption(option_a7f53c10c8024d238fb80578dac85161);
+    </script>
+                <div id="510fcaa9719642088598e36f7c9662f1" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_510fcaa9719642088598e36f7c9662f1 = echarts.init(
+            document.getElementById('510fcaa9719642088598e36f7c9662f1'), 'vintage', {renderer: 'canvas'});
+        var option_510fcaa9719642088598e36f7c9662f1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    75.0,
+                    75.0,
+                    76.0,
+                    52.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    92.0,
+                    79.0,
+                    63.0,
+                    70.0,
+                    90.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    95.0,
+                    88.0,
+                    89.0,
+                    81.0,
+                    95.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    60.0,
+                    50.0,
+                    32.0,
+                    75.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    64.0,
+                    55.0,
+                    32.0,
+                    82.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    83.0,
+                    77.0,
+                    76.0,
+                    77.0,
+                    84.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    77.0,
+                    73.0,
+                    78.0,
+                    75.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    83.0,
+                    78.0,
+                    51.0,
+                    73.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    90.0,
+                    78.0,
+                    64.0,
+                    89.0,
+                    90.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    88.0,
+                    89.0,
+                    88.0,
+                    80.0,
+                    87.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    76.0,
+                    76.0,
+                    48.0,
+                    54.0,
+                    82.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    76.0,
+                    49.0,
+                    61.0,
+                    77.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    84.0,
+                    84.0,
+                    74.0,
+                    78.0,
+                    84.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    16.0,
+                    11.0,
+                    15.0,
+                    37.0,
+                    19.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    84.0,
+                    80.0,
+                    74.0,
+                    81.0,
+                    86.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    65.0,
+                    67.0,
+                    67.0,
+                    82.0,
+                    81.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    80.0,
+                    null,
+                    89.0,
+                    45.0,
+                    90.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Dribbling",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Curve",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "FK Accuracy",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Long Passing",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Ball Control",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_510fcaa9719642088598e36f7c9662f1.setOption(option_510fcaa9719642088598e36f7c9662f1);
+    </script>
+                <div id="c2a1445dd49141a2bdeed8bf9684011c" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_c2a1445dd49141a2bdeed8bf9684011c = echarts.init(
+            document.getElementById('c2a1445dd49141a2bdeed8bf9684011c'), 'vintage', {renderer: 'canvas'});
+        var option_c2a1445dd49141a2bdeed8bf9684011c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    74.0,
+                    76.0,
+                    74.0,
+                    88.0,
+                    59.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    96.0,
+                    96.0,
+                    92.0,
+                    92.0,
+                    82.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    94.0,
+                    89.0,
+                    96.0,
+                    91.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    72.0,
+                    74.0,
+                    69.0,
+                    77.0,
+                    60.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    70.0,
+                    73.0,
+                    69.0,
+                    85.0,
+                    67.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    76.0,
+                    74.0,
+                    80.0,
+                    78.0,
+                    74.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    83.0,
+                    79.0,
+                    86.0,
+                    79.0,
+                    81.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    82.0,
+                    81.0,
+                    85.0,
+                    83.0,
+                    88.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    68.0,
+                    61.0,
+                    91.0,
+                    87.0,
+                    94.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    82.0,
+                    83.0,
+                    94.0,
+                    84.0,
+                    76.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    74.0,
+                    73.0,
+                    73.0,
+                    86.0,
+                    75.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    70.0,
+                    69.0,
+                    81.0,
+                    83.0,
+                    81.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    74.0,
+                    73.0,
+                    78.0,
+                    78.0,
+                    80.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    54.0,
+                    53.0,
+                    60.0,
+                    84.0,
+                    61.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    75.0,
+                    77.0,
+                    84.0,
+                    80.0,
+                    87.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    29.0,
+                    29.0,
+                    38.0,
+                    74.0,
+                    50.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    77.0,
+                    79.0,
+                    null,
+                    91.0,
+                    null
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Acceleration",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Sprint Speed",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Agility",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Reactions",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Balance",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_c2a1445dd49141a2bdeed8bf9684011c.setOption(option_c2a1445dd49141a2bdeed8bf9684011c);
+    </script>
+                <div id="a6913dbf50ac43e2a9a0982eda1a0efe" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_a6913dbf50ac43e2a9a0982eda1a0efe = echarts.init(
+            document.getElementById('a6913dbf50ac43e2a9a0982eda1a0efe'), 'vintage', {renderer: 'canvas'});
+        var option_a6913dbf50ac43e2a9a0982eda1a0efe = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    88.0,
+                    88.0,
+                    90.0,
+                    79.0,
+                    77.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    86.0,
+                    77.0,
+                    86.0,
+                    76.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    80.0,
+                    62.0,
+                    81.0,
+                    50.0,
+                    84.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    55.0,
+                    78.0,
+                    80.0,
+                    84.0,
+                    39.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    61.0,
+                    89.0,
+                    80.0,
+                    75.0,
+                    35.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    80.0,
+                    76.0,
+                    68.0,
+                    66.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    82.0,
+                    74.0,
+                    86.0,
+                    63.0,
+                    82.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    64.0,
+                    74.0,
+                    79.0,
+                    57.0,
+                    62.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    56.0,
+                    65.0,
+                    76.0,
+                    53.0,
+                    58.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    83.0,
+                    72.0,
+                    78.0,
+                    60.0,
+                    86.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    85.0,
+                    93.0,
+                    66.0,
+                    72.0,
+                    71.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    80.0,
+                    89.0,
+                    91.0,
+                    69.0,
+                    66.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    76.0,
+                    31.0,
+                    71.0,
+                    57.0,
+                    77.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    56.0,
+                    74.0,
+                    39.0,
+                    75.0,
+                    13.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    86.0,
+                    80.0,
+                    74.0,
+                    55.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    73.0,
+                    84.0,
+                    61.0,
+                    83.0,
+                    71.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    79.0,
+                    null,
+                    76.0,
+                    72.0,
+                    77.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Shot Power",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Jumping",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Stamina",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Strength",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Long Shots",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_a6913dbf50ac43e2a9a0982eda1a0efe.setOption(option_a6913dbf50ac43e2a9a0982eda1a0efe);
+    </script>
+                <div id="f575a4bf0c1a4beaa1bdc3c4f5e9ba87" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_f575a4bf0c1a4beaa1bdc3c4f5e9ba87 = echarts.init(
+            document.getElementById('f575a4bf0c1a4beaa1bdc3c4f5e9ba87'), 'vintage', {renderer: 'canvas'});
+        var option_f575a4bf0c1a4beaa1bdc3c4f5e9ba87 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    84.0,
+                    54.0,
+                    92.0,
+                    75.0,
+                    85.0,
+                    80.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    62.0,
+                    38.0,
+                    91.0,
+                    80.0,
+                    70.0,
+                    84.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    51.0,
+                    36.0,
+                    87.0,
+                    90.0,
+                    92.0,
+                    93.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    88.0,
+                    83.0,
+                    39.0,
+                    60.0,
+                    50.0,
+                    80.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    80.0,
+                    86.0,
+                    59.0,
+                    68.0,
+                    47.0,
+                    86.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    48.0,
+                    66.0,
+                    78.0,
+                    81.0,
+                    65.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    79.0,
+                    78.0,
+                    82.0,
+                    76.0,
+                    75.0,
+                    80.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    75.0,
+                    79.0,
+                    78.0,
+                    77.0,
+                    53.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    89.0,
+                    85.0,
+                    71.0,
+                    88.0,
+                    64.0,
+                    94.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    73.0,
+                    42.0,
+                    84.0,
+                    88.0,
+                    73.0,
+                    86.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    56.0,
+                    22.0,
+                    92.0,
+                    72.0,
+                    82.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    86.0,
+                    89.0,
+                    69.0,
+                    68.0,
+                    54.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    46.0,
+                    58.0,
+                    80.0,
+                    84.0,
+                    69.0,
+                    74.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    32.0,
+                    20.0,
+                    16.0,
+                    68.0,
+                    25.0,
+                    67.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    82.0,
+                    79.0,
+                    78.0,
+                    79.0,
+                    70.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    93.0,
+                    81.0,
+                    50.0,
+                    73.0,
+                    70.0,
+                    78.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    68.0,
+                    89.0,
+                    91.0,
+                    null,
+                    83.0,
+                    null
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Aggression",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Interceptions",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Positioning",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Vision",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Penalties",
+                "max": 100,
+                "color": "#5E2612"
+            },
+            {
+                "name": "Composure",
+                "max": 100,
+                "color": "#DA70D6"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_f575a4bf0c1a4beaa1bdc3c4f5e9ba87.setOption(option_f575a4bf0c1a4beaa1bdc3c4f5e9ba87);
+    </script>
+                <div id="eb8225c880c74ddc9e0e05b0f383f54c" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_eb8225c880c74ddc9e0e05b0f383f54c = echarts.init(
+            document.getElementById('eb8225c880c74ddc9e0e05b0f383f54c'), 'vintage', {renderer: 'canvas'});
+        var option_eb8225c880c74ddc9e0e05b0f383f54c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    48.0,
+                    39.0,
+                    57.0,
+                    54.0,
+                    54.0,
+                    79.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    34.0,
+                    32.0,
+                    34.0,
+                    38.0,
+                    38.0,
+                    76.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    30.0,
+                    29.0,
+                    35.0,
+                    36.0,
+                    36.0,
+                    50.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    84.0,
+                    81.0,
+                    80.0,
+                    83.0,
+                    83.0,
+                    84.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    87.0,
+                    87.0,
+                    87.0,
+                    86.0,
+                    86.0,
+                    75.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    64.0,
+                    44.0,
+                    39.0,
+                    66.0,
+                    66.0,
+                    66.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    79.0,
+                    78.0,
+                    75.0,
+                    78.0,
+                    78.0,
+                    63.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    81.0,
+                    78.0,
+                    75.0,
+                    79.0,
+                    79.0,
+                    57.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    82.0,
+                    83.0,
+                    78.0,
+                    85.0,
+                    85.0,
+                    53.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    55.0,
+                    52.0,
+                    41.0,
+                    42.0,
+                    42.0,
+                    60.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    24.0,
+                    20.0,
+                    45.0,
+                    22.0,
+                    22.0,
+                    72.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    90.0,
+                    83.0,
+                    84.0,
+                    89.0,
+                    89.0,
+                    69.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    54.0,
+                    49.0,
+                    60.0,
+                    58.0,
+                    58.0,
+                    57.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    14.0,
+                    14.0,
+                    28.0,
+                    20.0,
+                    20.0,
+                    75.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    78.0,
+                    80.0,
+                    null,
+                    79.0,
+                    79.0,
+                    55.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    82.0,
+                    73.0,
+                    null,
+                    81.0,
+                    81.0,
+                    83.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    22.0,
+                    null,
+                    null,
+                    89.0,
+                    89.0,
+                    72.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "Standing Tackle",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "Sliding Tackle",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "Defensive Awareness",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "Interceptions",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "Interceptions",
+                "max": 100,
+                "color": "#5E2612"
+            },
+            {
+                "name": "Strength",
+                "max": 100,
+                "color": "#DA70D6"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_eb8225c880c74ddc9e0e05b0f383f54c.setOption(option_eb8225c880c74ddc9e0e05b0f383f54c);
+    </script>
+                <div id="1dc98a19ebce4758a35afb9644a8bd63" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_1dc98a19ebce4758a35afb9644a8bd63 = echarts.init(
+            document.getElementById('1dc98a19ebce4758a35afb9644a8bd63'), 'vintage', {renderer: 'canvas'});
+        var option_1dc98a19ebce4758a35afb9644a8bd63 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "Edinson Cavani",
+            "data": [
+                [
+                    12.0,
+                    5.0,
+                    13.0,
+                    13.0,
+                    10.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Kylian Mbapp\u00e9",
+            "data": [
+                [
+                    13.0,
+                    5.0,
+                    7.0,
+                    11.0,
+                    6.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Neymar da Silva Santos Jr.",
+            "data": [
+                [
+                    9.0,
+                    9.0,
+                    15.0,
+                    15.0,
+                    11.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Presnel Kimpembe",
+            "data": [
+                [
+                    7.0,
+                    8.0,
+                    14.0,
+                    15.0,
+                    9.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marcos Ao\u00e1s Corr\u00eaa",
+            "data": [
+                [
+                    6.0,
+                    6.0,
+                    12.0,
+                    10.0,
+                    13.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Julian Draxler",
+            "data": [
+                [
+                    11.0,
+                    13.0,
+                    5.0,
+                    13.0,
+                    8.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Alessandro Florenzi",
+            "data": [
+                [
+                    9.0,
+                    8.0,
+                    10.0,
+                    11.0,
+                    10.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Juan Bernat Velasco",
+            "data": [
+                [
+                    8.0,
+                    9.0,
+                    12.0,
+                    11.0,
+                    16.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Marco Verratti",
+            "data": [
+                [
+                    12.0,
+                    12.0,
+                    15.0,
+                    15.0,
+                    10.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "\u00c1ngel Di Mar\u00eda",
+            "data": [
+                [
+                    10.0,
+                    7.0,
+                    11.0,
+                    12.0,
+                    11.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#00C78C"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Mauro Icardi",
+            "data": [
+                [
+                    13.0,
+                    9.0,
+                    5.0,
+                    7.0,
+                    9.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#1E90FF"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Idrissa Gueye",
+            "data": [
+                [
+                    8.0,
+                    6.0,
+                    8.0,
+                    12.0,
+                    13.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#9933FA"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Pablo Sarabia Garc\u00eda",
+            "data": [
+                [
+                    16.0,
+                    7.0,
+                    15.0,
+                    6.0,
+                    14.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#B0171F"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Keylor Navas",
+            "data": [
+                [
+                    90.0,
+                    81.0,
+                    75.0,
+                    82.0,
+                    90.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#5E2612"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Daniel Alves da Silva",
+            "data": [
+                [
+                    5.0,
+                    11.0,
+                    9.0,
+                    6.0,
+                    7.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#DA70D6"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": "Thiago Motta",
+            "data": [
+                [
+                    10.0,
+                    10.0,
+                    7.0,
+                    5.0,
+                    14.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "#0B1746"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "radar",
+            "name": " Pauleta",
+            "data": [
+                [
+                    7.0,
+                    22.0,
+                    45.0,
+                    22.0,
+                    22.0
+                ]
+            ],
+            "label": {
+                "show": "show",
+                "position": "insideBottom",
+                "margin": 8,
+                "fontSize": 14,
+                "fontFamily": "Arial"
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "red"
+            },
+            "areaStyle": {
+                "opacity": 0.4,
+                "color": "black"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Edinson Cavani",
+                "Kylian Mbapp\u00e9",
+                "Neymar da Silva Santos Jr.",
+                "Presnel Kimpembe",
+                "Marcos Ao\u00e1s Corr\u00eaa",
+                "Julian Draxler",
+                "Alessandro Florenzi",
+                "Juan Bernat Velasco",
+                "Marco Verratti",
+                "\u00c1ngel Di Mar\u00eda",
+                "Mauro Icardi",
+                "Idrissa Gueye",
+                "Pablo Sarabia Garc\u00eda",
+                "Keylor Navas",
+                "Daniel Alves da Silva",
+                "Thiago Motta",
+                " Pauleta"
+            ],
+            "selected": {
+                "Edinson Cavani": true,
+                "Kylian Mbapp\u00e9": true,
+                "Neymar da Silva Santos Jr.": true,
+                "Presnel Kimpembe": true,
+                "Marcos Ao\u00e1s Corr\u00eaa": true,
+                "Julian Draxler": true,
+                "Alessandro Florenzi": true,
+                "Juan Bernat Velasco": true,
+                "Marco Verratti": true,
+                "\u00c1ngel Di Mar\u00eda": true,
+                "Mauro Icardi": true,
+                "Idrissa Gueye": true,
+                "Pablo Sarabia Garc\u00eda": true,
+                "Keylor Navas": true,
+                "Daniel Alves da Silva": true,
+                "Thiago Motta": true,
+                " Pauleta": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "10",
+            "top": "30%",
+            "orient": "vertical",
+            "align": "auto",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 10,
+            "inactiveColor": "lightgrey",
+            "textStyle": {
+                "color": "blue"
+            },
+            "icon": "none"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "GK Diving",
+                "max": 100,
+                "color": "#00C78C"
+            },
+            {
+                "name": "GK Handling",
+                "max": 100,
+                "color": "#1E90FF"
+            },
+            {
+                "name": "GK Kicking",
+                "max": 100,
+                "color": "#9933FA"
+            },
+            {
+                "name": "GK Positioning",
+                "max": 100,
+                "color": "#B0171F"
+            },
+            {
+                "name": "GK Reflexes",
+                "max": 100,
+                "color": "#5E2612"
+            }
+        ],
+        "shape": "circle",
+        "name": {
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 20
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Player Attributes Radar",
+            "left": "2%",
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#292421",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 25
+            },
+            "subtextStyle": {
+                "color": "#808A87",
+                "fontWeight": "bold",
+                "fontFamily": "Times",
+                "fontSize": 18
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "1%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_1dc98a19ebce4758a35afb9644a8bd63.setOption(option_1dc98a19ebce4758a35afb9644a8bd63);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
